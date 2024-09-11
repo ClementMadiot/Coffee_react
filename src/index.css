@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color-scheme: rgb(225,227,241);
+}
 @layer utilities {
   .img-shadow {
     filter: drop-shadow(40px 50px 25px #0f1115);
