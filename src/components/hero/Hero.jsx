@@ -1,5 +1,5 @@
-import React from "react";
-import { Navbar } from "../index";
+import React, { useState } from "react";
+import { Navbar, Sidebar } from "../index";
 import { BgImage, BlackCoffee } from "../../assets";
 import { motion } from "framer-motion";
 
@@ -11,12 +11,13 @@ const bgImage = {
 };
 
 const Hero = () => {
+  const [sidebar, setSidebar] = useState(false)
   return (
     <main style={bgImage}>
-      <section className="min-h-[750px] w-full">
+      <section className="relative min-h-[750px] w-full">
         <div className="container">
           {/* Navbar section  */}
-          <Navbar />
+          <Navbar sidebar={sidebar} setSidebar={setSidebar} />
           {/* Hero section  */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center min-h-[850px]">
             {/* text content section  */}
@@ -72,27 +73,29 @@ const Hero = () => {
                 className="relative z-40 h-[400px] md:h-[700px] img-shadow"
               />
               {/* orange cercle ring  */}
-              <motion.div 
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-                delay: 0.8,
-              }}
-              className="absolute h-[180px] w-[180px] top-24 -right-16 border-primary rounded-full z-10 border-[20px]"></motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className="absolute h-[180px] w-[180px] top-24 -right-16 border-primary rounded-full z-10 border-[20px]"
+              ></motion.div>
               {/* black text section */}
               <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-                delay: 0.8,
-              }}
-              className="absolute -top-20 left-[250px] z-[1]">
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className="absolute -top-20 left-[250px] z-[1]"
+              >
                 <h3 className="text-[140px] scale-150 font-bold text-darkGray/40 leading-non">
                   Black Tumbler
                 </h3>
@@ -129,6 +132,10 @@ const Hero = () => {
             <div></div>
           </div>
         </div>
+        {/* sidevar menu section  */}
+        {sidebar && (
+          <Sidebar/>
+        )}
       </section>
     </main>
   );
