@@ -1,6 +1,7 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/motion";
 
 const Navbar = ({sidebar, setSidebar}) => {
   return (
@@ -9,28 +10,18 @@ const Navbar = ({sidebar, setSidebar}) => {
         <div className="flex justify-between items-center">
           {/* logo section  */}
           <motion.h1
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 10,
-              delay: 0.2,
-            }}
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            animate="show"
             className="text-2xl font-semibold text-primary uppercase"
             >
             Coders <span className="text-white">Coffee.</span>
           </motion.h1>
           {/* Hamburger  */}
           <motion.div
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 10,
-              delay: 0.2,
-            }}
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          animate="show"
             onClick={() => setSidebar(!sidebar)}
 
           >

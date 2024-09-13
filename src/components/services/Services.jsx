@@ -1,10 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import data 
-import { titleVariants } from "../../utils/motion";
+// import data
+import { fadeIn } from "../../utils/motion";
 import ServiceCard from "./ServiceCard";
-
-
 
 const Services = () => {
   return (
@@ -12,24 +10,19 @@ const Services = () => {
       {/* header section  */}
       <div className=" text-center max-w-lg mx-auto space-y-2">
         <motion.h1
-          variants={titleVariants}
+          variants={fadeIn("up", 0.3)}
           initial="hidden"
-          whileInView={"visible"}
+          whileInView={"show"}
           viewport={{ amount: 0.5 }}
-          transition={{ delay: 0.3 }}
           className=" text-3xl font-bold text-lightGray mb-4"
         >
           Fresh and <span className="text-primary">Tasty coffee</span>
         </motion.h1>
         <motion.p
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 100,
-            damping: 11,
-            delay: 0.6,
-          }}
+          variants={fadeIn("up", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ amount: 0.5 }}
           className="text-sm opacity-80"
         >
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
@@ -38,7 +31,7 @@ const Services = () => {
         </motion.p>
       </div>
       {/* card section  */}
-      <ServiceCard/>
+      <ServiceCard />
     </section>
   );
 };

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { titleVariants } from "../../utils/motion";
+import { fadeIn } from "../../utils/motion";
 import { WorldMap } from "../../assets";
 import { inputDatas } from "../../constant";
 
@@ -10,20 +10,18 @@ function FormProduct() {
         {/* form section  */}
         <div className="space-y-8">
           <motion.h1
-            variants={titleVariants}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
-            whileInView={"visible"}
+            whileInView={"show"}
             viewport={{ amount: 0.5 }}
-            transition={{ delay: 0.3 }}
             className="text-4xl font-bold text-darkGray font-serif"
           >
             Buy our products from anywhere
           </motion.h1>
           <motion.div
-            variants={titleVariants}
+            variants={fadeIn("up", 0.6)}
             initial="hidden"
-            whileInView={"visible"}
-            transition={{ delay: 0.3 }}
+            whileInView={"show"}
             className="flex items-center gap-4"
           >
             {inputDatas.slice(0, 2).map(({ id, type, placeholder, width }) => (
@@ -36,10 +34,9 @@ function FormProduct() {
             ))}
           </motion.div>
           <motion.div
-            variants={titleVariants}
+            variants={fadeIn("up", 0.7)}
             initial="hidden"
-            whileInView={"visible"}
-            transition={{ delay: 0.6 }}
+            whileInView={"show"}
             className="flex items-center gap-4"
           >
             {inputDatas.slice(2, 4).map(({ id, type, placeholder, width }) => (
@@ -52,10 +49,9 @@ function FormProduct() {
             ))}
           </motion.div>
           <motion.button
-            variants={titleVariants}
+            variants={fadeIn("up", 0.8)}
             initial="hidden"
-            whileInView={"visible"}
-            transition={{ delay: 0.6 }}
+            whileInView={"show"}
             className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primaryDark duration-200 w-full"
           >
             Order Now

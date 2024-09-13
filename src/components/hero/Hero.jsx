@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+// import data 
 import { HeroText, Navbar, Sidebar } from "../index";
 import { BgImage, BlackCoffee } from "../../assets/index";
-import { motion } from "framer-motion";
+import {  fadeIn, fadeScale } from "../../utils/motion";
 
 const bgImage = {
   backgroundImage: `url(${BgImage})`,
@@ -30,40 +32,25 @@ const Hero = () => {
             {/* Hero img section  */}
             <article className="relative">
               <motion.img
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 100,
-                  damping: 10,
-                  delay: 0.4,
-                }}
+                variants={fadeScale(0.4)}
+                initial="hidden"
+                whileInView="show"
                 src={BlackCoffee}
                 alt="Black coffee"
                 className="relative z-40 h-[400px] md:h-[700px] img-shadow"
               />
               {/* orange cercle ring  */}
               <motion.div
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 100,
-                  damping: 10,
-                  delay: 0.8,
-                }}
+              variants={fadeIn("up", 0.8)}
+              initial="hidden"
+              whileInView={"show"}
                 className="absolute h-[180px] w-[180px] top-24 -right-16 border-primary rounded-full z-10 border-[20px]"
               ></motion.div>
               {/* black text section */}
               <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 100,
-                  damping: 10,
-                  delay: 0.8,
-                }}
+              variants={fadeIn("up", 0.8)}
+              initial="hidden"
+              animate={"show"}            
                 className="absolute -top-20 left-[250px] z-[1]"
               >
                 <h3 className="text-[140px] scale-150 font-bold text-darkGray/40 leading-non">
