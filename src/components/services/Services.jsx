@@ -1,5 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+// import data 
+import ServiceCard from "./ServiceCard";
+
+
 
 const Services = () => {
   return (
@@ -36,6 +40,7 @@ const Services = () => {
         </motion.p>
       </div>
       {/* card section  */}
+      <ServiceCard/>
     </section>
   );
 };

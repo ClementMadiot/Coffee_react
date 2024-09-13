@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HeroText, Navbar, Sidebar } from "../index";
-import { BgImage, BlackCoffee } from "../../assets";
+import { BgImage, BlackCoffee } from "../../assets/index";
 import { motion } from "framer-motion";
 
 const bgImage = {
