@@ -21,3 +21,30 @@ export const servicesData = [
     subtitle: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.'
   }
 ]
+
+export const inputDatas = [
+  {
+    id: 1,
+    type: 'text',
+    placeholder: "Name",
+    width: 'lg:w-[150px]'
+  },
+  {
+    id: 2,
+    type: 'email',
+    placeholder: 'Email',
+    width: ''
+  },
+  {
+    id: 3,
+    type: 'text',
+    placeholder: 'Country',
+    width: ''
+  },
+  {
+    id: 4,
+    type: 'text',
+    placeholder: 'Zipcode',
+    width: 'lg:w-[150px]'
+  }
+]

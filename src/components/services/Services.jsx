@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 // import data 
+import { titleVariants } from "../../utils/motion";
 import ServiceCard from "./ServiceCard";
 
 
@@ -11,14 +12,11 @@ const Services = () => {
       {/* header section  */}
       <div className=" text-center max-w-lg mx-auto space-y-2">
         <motion.h1
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            type: "spring",
-            stiffness: 100,
-            damping: 11,
-            delay: 0.5,
-          }}
+          variants={titleVariants}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ amount: 0.5 }}
+          transition={{ delay: 0.3 }}
           className=" text-3xl font-bold text-lightGray mb-4"
         >
           Fresh and <span className="text-primary">Tasty coffee</span>
