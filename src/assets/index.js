@@ -5,8 +5,23 @@ import CoffeeCover from './images/coffee-cover.jpg'
 import BlackCoffee from './images/black.png'
 import WorldMap from './images/world-map.png'
 import AppStore from './website/app_store.png'
-import Banner from './website/banner.jpg'
 import CreditCard from './website/credit-cards.webp'
 import PlayStore from './website/play_store.png'
 
-export { Coffee1, Coffee3, BgImage, BlackCoffee, CoffeeCover, WorldMap, AppStore, Banner, CreditCard, PlayStore }
+export { Coffee1, Coffee3, BgImage, BlackCoffee, CoffeeCover, WorldMap, AppStore, CreditCard, PlayStore }
+
+export const bgImageStyle = {
+  backgroundImage: `url(${BgImage})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+};
+
+export const BannerStyle = {
+  backgroundImage: `url(${CoffeeCover})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  height: "100%",
+  width: "100%"
+}
