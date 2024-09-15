@@ -1,4 +1,6 @@
+import { FaMapLocation } from "react-icons/fa6";
 import { Coffee1, Coffee3, AppStore, PlayStore} from "../assets/index";
+import { FaFacebookF, FaGoogle, FaInstagram, FaPhone, FaTelegram } from "react-icons/fa";
 
 export const servicesData = [
   {
@@ -58,3 +60,61 @@ export const BannerLink = [
     link: "#",
   },
 ];
+
+export const FooterCompanyDetails = [
+  {
+    icon: <FaPhone/>,
+    paragraph: "+1 (123) 456-7890",
+  },
+  {
+    icon: <FaMapLocation/>,
+    paragraph: "Nioda, Uttar Pradesh",
+  },
+]
+
+export const FooterLinks = [
+  {
+    id: 1,
+    title: "Home",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "About",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Contact us",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Search Fruits",
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "Privacy Policy",
+    link: "#",
+  },
+];
+
+export const FooterFollow = [
+  {
+    icon: <FaFacebookF />,
+    link: "#",
+  },
+  {
+    icon: <FaInstagram />,
+    link: "#",
+  },
+  {
+    icon: <FaTelegram/>,
+    link: "#",
+  },
+  {
+    icon: <FaGoogle />,
+    link: "#",
+  },
+]
