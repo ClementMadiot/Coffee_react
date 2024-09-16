@@ -36,22 +36,19 @@ const Hero = () => {
               />
               {/* orange cercle ring  */}
               <motion.div
-                variants={fadeIn("up", 0.8)}
+                variants={fadeIn("up", 0.6)}
                 initial="hidden"
                 whileInView={"show"}
                 className="absolute h-[180px] w-[180px] top-24 -right-16 border-primary rounded-full z-10 border-[20px]"
               ></motion.div>
               {/* black text section */}
-              <motion.div
-                variants={fadeIn("up", 0.8)}
-                initial="hidden"
-                animate={"show"}
+              <div
                 className="absolute -top-20 left-[250px] z-[1]"
               >
                 <h3 className="text-[140px] scale-150 font-bold text-darkGray/40 leading-non">
                   Black Tumbler
                 </h3>
-              </motion.div>
+              </div>
             </article>
             {/* text content section  */}
             <HeroText

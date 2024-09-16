@@ -15,7 +15,7 @@ function BannerApp() {
         <article className="">
           <div className="space-y-6 max-w-xl mx-auto">
             <motion.h1
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView="show"
               className="text-2xl text-center sm:text-4xl font-semibold"
@@ -23,7 +23,7 @@ function BannerApp() {
               Download the app
             </motion.h1>
             <motion.p
-              variants={fadeIn("up", 0.9)}
+              variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView="show"
               className=" text-center sm:px-20"
@@ -37,7 +37,7 @@ function BannerApp() {
                 <motion.a
                   key={index}
                   href={item.link}
-                  variants={fadeIn("up", 0.3)}
+                  variants={fadeIn("up", 0.8)}
                   initial="hidden"
                   whileInView="show"
                   className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"

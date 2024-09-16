@@ -13,7 +13,7 @@ function HeroText({ className, title, subheading, paragraph, color }) {
         {title}
       </motion.h1>
       <motion.div
-      variants={fadeIn("up", 0.8)}
+      variants={fadeIn("up", 0.9)}
         initial="hidden"
         whileInView={"show"}
         className="relative"

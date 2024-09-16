@@ -1,22 +1,24 @@
-export const cardVariants = {
-  hidden: {
-    y: 20,
-    opacity: 1,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 11,
-      ease: "easeInOut",
-      duration: 0.3,
+export const cardVariants = (delay) => {
+  return {
+    hidden: {
+      y: 100,
+      opacity: 0,
     },
-  },
+    show: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        delay: delay,
+        stiffness: 100,
+        damping: 11,
+        ease: "easeInOut",
+      },
+    },
+  };
 };
 
-export const fadeScale = (duration) => {
+export const fadeScale = (delay) => {
   return {
     hidden: {
       opacity: 0,
@@ -29,13 +31,13 @@ export const fadeScale = (duration) => {
         type: "spring",
         stiffness: 100,
         damping: 10,
-        duration: duration,
+        delay: delay,
       },
     },
   };
-}
+};
 
-export const fadeIn = (direction, duration) => {
+export const fadeIn = (direction, delay) => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -48,9 +50,10 @@ export const fadeIn = (direction, duration) => {
       opacity: 1,
       transition: {
         type: "spring",
-        duration: duration,
+        delay: delay,
         stiffness: 100,
         damping: 11,
+        bounce: 0.25,
       },
     },
   };

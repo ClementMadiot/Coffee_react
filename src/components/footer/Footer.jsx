@@ -17,6 +17,7 @@ const Footer = () => {
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
             className="space-y-6"
           >
             <h2 className="text-3xl font-bold uppercase">Coders Cafe</h2>
@@ -35,24 +36,25 @@ const Footer = () => {
           </motion.article>
           {/* footer links  */}
           <motion.article
-            variants={fadeIn("up", 0.6)}
+            variants={fadeIn("up", 0.8)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
             className="space-y-6"
           >
             <h2 className="text-3xl font-bold">Quick Links</h2>
             <div className="grid grid-cols-2 gap-3">
               <ul className="space-y-2">
                 {FooterLinks.map(({ id, title, link }) => (
-                  <li key={id}>
+                  <li key={id} className="font-medium text-slate-100 hover:text-slate-800  transition-colors">
                     <a href={link}>{title}</a>
                   </li>
                 ))}
               </ul>
               <ul className="space-y-2">
                 {FooterLinks.map(({ id, title, link }) => (
-                  <li key={id}>
-                    <a href={link}>{title}</a>
+                  <li key={id} className="font-medium text-slate-100 hover:text-slate-800  transition-colors">
+                    <a href={link} >{title}</a>
                   </li>
                 ))}
               </ul>
@@ -60,16 +62,17 @@ const Footer = () => {
           </motion.article>
           {/* social links  */}
           <motion.article
-            variants={fadeIn("up", 0.8)}
+            variants={fadeIn("up", 1.2)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
             className="space-y-6"
           >
             <h2 className="text-3xl font-bold">Follow Us</h2>
             <div className="flex items-center gap-4">
               {FooterFollow.map(({ icon, link }, index) => (
                 <a
-                  className="text-2xl hover:scale-105 duration-300"
+                  className="text-2xl hover:scale-[1.15] duration-300"
                   key={index}
                   href={link}
                 >
@@ -78,7 +81,7 @@ const Footer = () => {
               ))}
             </div>
             <div>
-              <h3 className="text-xl font-semibold">Payment Methods</h3>
+              <h3 className="text-xl font-semibold mb-2">Payment Methods</h3>
               <img src={CreditCard} alt="Credit cards" className="w-[80%]" />
             </div>
           </motion.article>

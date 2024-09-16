@@ -13,7 +13,7 @@ function FormProduct() {
             variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ amount: 0.5 }}
+
             className="text-4xl font-bold text-darkGray font-serif"
           >
             Buy our products from anywhere
@@ -34,7 +34,7 @@ function FormProduct() {
             ))}
           </motion.div>
           <motion.div
-            variants={fadeIn("up", 0.7)}
+            variants={fadeIn("up", 0.9)}
             initial="hidden"
             whileInView={"show"}
             className="flex items-center gap-4"
@@ -49,7 +49,7 @@ function FormProduct() {
             ))}
           </motion.div>
           <motion.button
-            variants={fadeIn("up", 0.8)}
+            variants={fadeIn("up", 1.2)}
             initial="hidden"
             whileInView={"show"}
             className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primaryDark duration-200 w-full"
