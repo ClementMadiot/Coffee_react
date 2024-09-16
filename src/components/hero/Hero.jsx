@@ -6,13 +6,13 @@ import { BlackCoffee, bgImageStyle } from "../../assets/index";
 import { fadeIn, fadeScale } from "../../utils/motion";
 
 const Hero = () => {
-  const [sidebar, setSidebar] = useState(false);
+  const [toggle, settoggle] = useState(false);
   return (
-    <main style={bgImageStyle}>
+    <section style={bgImageStyle}>
       <section className="relative min-h-[750px] w-full">
         <div className="container">
           {/* Navbar section  */}
-          <Navbar sidebar={sidebar} setSidebar={setSidebar} />
+          <Navbar toggle={toggle} settoggle={settoggle} />
           {/* Hero section  */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center min-h-[850px]">
             {/* text content section  */}
@@ -42,9 +42,7 @@ const Hero = () => {
                 className="absolute h-[180px] w-[180px] top-24 -right-16 border-primary rounded-full z-10 border-[20px]"
               ></motion.div>
               {/* black text section */}
-              <div
-                className="absolute -top-20 left-[250px] z-[1]"
-              >
+              <div className="absolute -top-20 left-[250px] z-[1]">
                 <h3 className="text-[140px] scale-150 font-bold text-darkGray/40 leading-non">
                   Black Tumbler
                 </h3>
@@ -63,9 +61,9 @@ const Hero = () => {
           </div>
         </div>
         {/* sidevar menu section  */}
-        {sidebar && <Sidebar />}
+        {toggle && <Sidebar toggle={toggle} />}
       </section>
-    </main>
+    </section>
   );
 };
 

@@ -58,3 +58,12 @@ export const fadeIn = (direction, delay) => {
     },
   };
 };
+
+export const toggleVariants = ({ toggle }) => {
+  return {
+    hidden: {
+      x: toggle ? "100%" : 0,
+    },
+    visible: { x: 0 },
+  };
+};

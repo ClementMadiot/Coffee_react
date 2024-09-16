@@ -37,6 +37,7 @@ export default [
       "react/jsx-uses-vars": "error",
       "no-unused-vars": "off",
       "react/prop-types": "off",
+      "parser": "@babel/eslint-parser",
     },
   },
 ];

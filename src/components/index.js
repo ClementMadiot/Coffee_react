@@ -7,4 +7,13 @@ import FormProduct from "./form/FormProduct";
 import Footer from "./footer/Footer";
 import BannerApp from "./banner/BannerApp";
 
-export { Navbar, Sidebar, Hero, HeroText, Services, FormProduct,BannerApp, Footer };
+export {
+  Navbar,
+  Sidebar,
+  Hero,
+  HeroText,
+  Services,
+  FormProduct,
+  BannerApp,
+  Footer,
+};

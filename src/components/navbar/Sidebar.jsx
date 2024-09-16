@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+// import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { navSocials } from "../../constant/index";
 
 function Sidebar() {
   return (
@@ -14,15 +15,11 @@ function Sidebar() {
           {/* line  */}
           <div className="w-[1px] h-[70px] bg-white"></div>
           {/* social icons  */}
-          <div className="inline-block p-2 rounded-full cursor-pointer border border-white">
-            <FaFacebookF className="text-2xl" />
+            {navSocials.map((item, index) => (
+          <div key={index} className="inline-block p-2 rounded-full cursor-pointer border border-white">
+              {item.icon}
           </div>
-          <div className="inline-block p-2 rounded-full cursor-pointer border border-white">
-            <FaTwitter className="text-2xl" />
-          </div>
-          <div className="inline-block p-2 rounded-full cursor-pointer border border-white">
-            <FaInstagram className="text-2xl" />
-          </div>
+            ))}
           {/* line  */}
           <div className="w-[1px] h-[70px] bg-white"></div>
         </div>

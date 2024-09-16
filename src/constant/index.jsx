@@ -1,6 +1,25 @@
 import { FaMapLocation } from "react-icons/fa6";
-import { Coffee1, Coffee3, AppStore, PlayStore} from "../assets/index";
-import { FaFacebookF, FaGoogle, FaInstagram, FaPhone, FaTelegram } from "react-icons/fa";
+import { Coffee1, Coffee3, AppStore, PlayStore } from "../assets/index";
+import {
+  FaFacebookF,
+  FaGoogle,
+  FaInstagram,
+  FaPhone,
+  FaTelegram,
+  FaTwitter,
+} from "react-icons/fa";
+
+export const navSocials = [
+  {
+    icon: <FaFacebookF className="text-2xl" />,
+  },
+  {
+    icon: <FaInstagram className="text-2xl" />,
+  },
+  {
+    icon: <FaTwitter className="text-2xl" />,
+  },
+];
 
 export const servicesData = [
   {
@@ -63,14 +82,14 @@ export const BannerLink = [
 
 export const FooterCompanyDetails = [
   {
-    icon: <FaPhone/>,
+    icon: <FaPhone />,
     paragraph: "+1 (123) 456-7890",
   },
   {
-    icon: <FaMapLocation/>,
+    icon: <FaMapLocation />,
     paragraph: "Nioda, Uttar Pradesh",
   },
-]
+];
 
 export const FooterLinks = [
   {
@@ -110,11 +129,11 @@ export const FooterFollow = [
     link: "#",
   },
   {
-    icon: <FaTelegram/>,
+    icon: <FaTelegram />,
     link: "#",
   },
   {
     icon: <FaGoogle />,
     link: "#",
   },
-]
+];
