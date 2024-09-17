@@ -20,7 +20,7 @@ function MenuToggle({ toggle, settoggle }) {
             />
             {toggle && (
               <IoClose
-                className="text-3xl cursor-pointer"
+                className="text-3xl cursor-pointer hover:scale-x-105 duration-150"
                 onClick={() => settoggle(!toggle)}
               />
             )}

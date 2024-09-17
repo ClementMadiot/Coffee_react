@@ -1,5 +1,5 @@
 import { FaMapLocation } from "react-icons/fa6";
-import { Coffee1, Coffee3, AppStore, PlayStore } from "../assets/index";
+import { AppStore, PlayStore, BlackCoffe, ColdCoffee, LightCoffee } from "../assets/index";
 import {
   FaFacebookF,
   FaGoogle,
@@ -24,19 +24,19 @@ export const navSocials = [
 export const servicesData = [
   {
     id: 1,
-    image: Coffee1,
+    image: BlackCoffe,
     title: "Black Coffee",
     subtitle: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 2,
-    image: Coffee3,
+    image: ColdCoffee,
     title: "Hot Coffee",
     subtitle: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 3,
-    image: Coffee1,
+    image: LightCoffee,
     title: "Cold Coffee",
     subtitle: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },

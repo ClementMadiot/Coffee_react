@@ -9,7 +9,7 @@ import { servicesData } from "../../constant";
 
 const Services = () => {
   return (
-    <section className="container my-16 space-y-4">
+    <section className="container my-16 space-y-12">
       {/* header section  */}
       <article className=" text-center max-w-lg mx-auto space-y-2">
         <motion.h1

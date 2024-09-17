@@ -18,7 +18,7 @@ function Sidebar() {
           <div className="w-[1px] h-[70px] bg-white"></div>
           {/* social icons  */}
             {navSocials.map((item, index) => (
-          <div key={index} className="inline-block p-2 rounded-full cursor-pointer border border-white">
+          <div key={index} className="inline-block p-2 rounded-full cursor-pointer border border-white hover:scale-110 duration-150 ">
               {item.icon}
           </div>
             ))}
