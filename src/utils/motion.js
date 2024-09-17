@@ -59,11 +59,13 @@ export const fadeIn = (direction, delay) => {
   };
 };
 
-export const toggleVariants = ({ toggle }) => {
-  return {
-    hidden: {
-      x: toggle ? "100%" : 0,
-    },
-    visible: { x: 0 },
-  };
+export const toggleVariants = {
+  hidden: {
+    x: "100%",
+    transition: { duration: 0.3, ease: "easeInOut" },
+  },
+  visible: {
+    x: 0,
+    // transition: { duration: 0.3, ease: "easeInOut" },
+  },
 };

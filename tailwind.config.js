@@ -17,6 +17,9 @@ export default {
           sm: "2rem",
         },
       },
+      screens: {
+        vsm: "425px",
+      }
     },
   },
   plugins: [],

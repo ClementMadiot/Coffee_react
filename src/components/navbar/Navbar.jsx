@@ -6,7 +6,7 @@ import MenuToggle from "./MenuToggle";
 const Navbar = ({ toggle, settoggle }) => {
   
   return (
-    <nav className="absolute top-0 left-0 w-full pt-10 text-white z-40">
+    <nav className="absolute top-0 left-0 w-full pt-6 text-white z-40">
       <article className="container">
         <div className="flex justify-between items-center">
           {/* logo section  */}
