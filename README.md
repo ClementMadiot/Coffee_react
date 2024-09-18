@@ -4,3 +4,5 @@ dependence :
 - react-icon
 - framer-motion
 - Taiwindcss
+- react-tilt
+

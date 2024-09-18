@@ -3,6 +3,8 @@ import { fadeIn } from "../../utils/motion";
 import { WorldMap } from "../../assets";
 import { inputDatas } from "../../constant";
 
+import Button from "../services/Button";
+
 function FormProduct() {
   return (
     <section className="container my-36">
@@ -12,7 +14,7 @@ function FormProduct() {
           <motion.h1
             variants={fadeIn("up", 0.3)}
             initial="hidden"
-            whileInView={"show"}
+            animate={"show"}
 
             className="text-4xl font-bold text-darkGray font-serif"
           >
@@ -21,7 +23,7 @@ function FormProduct() {
           <motion.div
             variants={fadeIn("up", 0.6)}
             initial="hidden"
-            whileInView={"show"}
+            animate={"show"}
             className="flex items-center gap-4"
           >
             {inputDatas.slice(0, 2).map(({ id, type, placeholder, width }) => (
@@ -36,7 +38,7 @@ function FormProduct() {
           <motion.div
             variants={fadeIn("up", 0.9)}
             initial="hidden"
-            whileInView={"show"}
+            animate={"show"}
             className="flex items-center gap-4"
           >
             {inputDatas.slice(2, 4).map(({ id, type, placeholder, width }) => (
@@ -48,14 +50,7 @@ function FormProduct() {
               />
             ))}
           </motion.div>
-          <motion.button
-            variants={fadeIn("up", 1.2)}
-            initial="hidden"
-            whileInView={"show"}
-            className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primaryDark duration-200 w-full"
-          >
-            Order Now
-          </motion.button>
+          <Button text="Order Now" delay={1.2} className={"bg-primary text-white px-4 py-3 rounded-md hover:bg-primaryDark duration-200 w-full text-base"} />
         </div>
         {/* world map  */}
         <div className="col-span-2">
