@@ -69,7 +69,7 @@ const Footer = () => {
             className="space-y-6"
           >
             <h2 className="text-3xl font-bold">Follow Us</h2>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center mb-4 gap-4">
               {FooterFollow.map(({ icon, link }, index) => (
                 <a
                   className="text-2xl hover:scale-[1.15] duration-300"
@@ -81,7 +81,7 @@ const Footer = () => {
               ))}
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Payment Methods</h3>
+              <h3 className="text-xl font-semibold mb-3">Payment Methods</h3>
               <img src={CreditCard} alt="Credit cards" className="w-[80%]" />
             </div>
           </motion.article>
