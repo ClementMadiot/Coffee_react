@@ -52,7 +52,7 @@ const Hero = () => {
             {/* text content section  */}
             <HeroText
               hidden={"hidden lg:block"}
-              className="md:-mt-6"
+              className="text-transparent md:-mt-6"
               title={"Black Tumbler"}
               subheading={"Black Tumbler"}
               paragraph={
