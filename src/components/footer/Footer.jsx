@@ -46,14 +46,14 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-3">
               <ul className="space-y-2">
                 {FooterLinks.map(({ id, title, link }) => (
-                  <li key={id} className="font-medium text-slate-100 hover:text-slate-800  transition-colors">
+                  <li key={id} className=" text-slate-100 hover:text-slate-800  transition-colors">
                     <a href={link}>{title}</a>
                   </li>
                 ))}
               </ul>
               <ul className="space-y-2">
                 {FooterLinks.map(({ id, title, link }) => (
-                  <li key={id} className="font-medium text-slate-100 hover:text-slate-800  transition-colors">
+                  <li key={id} className=" text-slate-100 hover:text-slate-800  transition-colors">
                     <a href={link} >{title}</a>
                   </li>
                 ))}

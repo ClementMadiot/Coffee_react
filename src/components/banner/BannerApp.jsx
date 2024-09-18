@@ -17,7 +17,7 @@ function BannerApp() {
             <motion.h1
               variants={fadeIn("up", 0.2)}
               initial="hidden"
-              whileInView="show"
+              animate="show"
               className="text-2xl text-center sm:text-4xl font-semibold"
             >
               Download the app
@@ -25,7 +25,7 @@ function BannerApp() {
             <motion.p
               variants={fadeIn("up", 0.4)}
               initial="hidden"
-              whileInView="show"
+              animate="show"
               className=" text-center sm:px-20"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -39,7 +39,7 @@ function BannerApp() {
                   href={item.link}
                   variants={fadeIn("up", 0.8)}
                   initial="hidden"
-                  whileInView="show"
+                  animate="show"
                   className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
                 >
                   <img src={item.img} alt={item.img} />
