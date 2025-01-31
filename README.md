@@ -1,4 +1,8 @@
 <div align="center">
+  <div align="center">
+    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+  </div>
   <a href="https://coder-coffe-cm.netlify.app/" target="_blanck"><img src="./public/Coders_Coffee.png" alt="Coder Coffee"></a>
   <h3 align="center">Coders Coffee</h3>
 </div>
@@ -12,13 +16,14 @@
 
 ## <br /> <a name="introduction">✨ Introduction</a>
 
-**[ENG]** Complete Responsive Coffee shop Website using ReactJS and Tailwind CSS. Animated with Framer motion and react-tilt  
+**[ENG]** This fully responsive Coffee Shop Website is built with ReactJS and Tailwind CSS, ensuring a modern and seamless user experience across all devices. Animated with Framer Motion and react-tilt, it delivers smooth interactions and dynamic visual effects, enhancing user engagement.
 
-**[FR]** Site Web entièrement réactif pour un café utilisant ReactJS et Tailwind CSS. Animé avec Framer motion et react-tilt
+**[FR]** Ce site web de café entièrement responsive est développé avec ReactJS et Tailwind CSS, offrant une expérience fluide et moderne sur tous les appareils. Animé avec Framer Motion et react-tilt, il intègre des interactions fluides et des effets visuels dynamiques pour une navigation immersive.
 
 ## <br /> <a name="tech-stack">🛠 Technology Used</a>
 
 - [TailwindCSS](https://tailwindcss.com/docs/installation)
+Tailwind CSS is a valuable tool for developers who want to build modern, responsive, and visually appealing websites without sacrificing development speed.
 
 - [react-icon](https://www.npmjs.com/package/react-icons)
 Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
