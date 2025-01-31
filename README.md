@@ -1,9 +1,9 @@
 <div align="center">
+  <a href="https://coder-coffe-cm.netlify.app/" target="_blanck"><img src="./public/Coders_Coffee.png" alt="Coder Coffee"></a>
   <div align="center">
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
-  <a href="https://coder-coffe-cm.netlify.app/" target="_blanck"><img src="./public/Coders_Coffee.png" alt="Coder Coffee"></a>
   <h3 align="center">Coders Coffee</h3>
 </div>
 
